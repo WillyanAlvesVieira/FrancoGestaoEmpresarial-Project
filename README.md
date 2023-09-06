@@ -1,4 +1,3 @@
-FrancoGestãoEmpresarial
 Este é o meu primeiro projeto pessoal, e estou animado em compartilhá-lo com vocês! O FrancoGestãoEmpresarial é um site que representa um marco importante na minha jornada de aprendizado em programação e desenvolvimento web.
 
 Como alguém que está apenas começando nesta área, este projeto é o resultado de muitas horas de estudo e dedicação, onde pude aplicar e consolidar todo o conhecimento que adquiri até o momento. Desde a criação das páginas até a implementação das funcionalidades, cada linha de código representa um passo em direção ao meu crescimento como desenvolvedor.
