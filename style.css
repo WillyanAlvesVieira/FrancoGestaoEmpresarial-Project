@@ -2,296 +2,344 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;700&family=Poppins:wght@300;500&family=Sintony:wght@400;700&display=swap');
 
 * {
-    box-sizing: border-box;
-    margin: 0 auto;
-    
-    
+  box-sizing: border-box;
+  margin: 0 auto;
+
+
 }
 
-li, a{
-    font-family: 'Poppins';
-    font-weight: 500;
-    font-size: 14px;
-    color: #0A0000;
-    text-decoration: none;
-    background-color: white;
-    padding: 10px;
-    
-} 
+html {
+  overflow-x: hidden;
+  /* Esconde a barra de rolagem horizontal */
+}
+
+
+li,
+a {
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 14px;
+  color: #0A0000;
+  text-decoration: none;
+  background-color: white;
+  padding: 10px;
+
+}
 
 header {
- 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px;
-    background-color: white;
-    max-width: 1200px;
-   
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  background-color: white;
+  max-width: 1200px;
+
+
 }
 
 .header__a:hover {
-    background-color: #AE0000;
-    color: white;
-    border-radius: 10px;
-    padding: 10px;
-    transition: 0.5s ease
-    
+  background-color: #AE0000;
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+  transition: 0.5s ease
 }
 
 
-ul{
-    background-color: white;
+ul {
+  background-color: white;
 }
 
-.logo{
-    cursor: pointer;
-    width: 15vh; 
-    
-}
-
-.nav__links li{
-    list-style: none;
-    display: inline-block;
-    margin: 1em;
+.logo {
+  cursor: pointer;
+  width: 15vh;
 
 }
 
-a.header__adc{
-background-color:#AE0000;
-color:white;
-border-radius: 10px;
- 
+.nav__links li {
+  list-style: none;
+  display: inline-block;
+  margin: 1em;
+
+}
+
+a.header__adc {
+  background-color: #AE0000;
+  color: white;
+  border-radius: 10px;
+
 }
 
 /* -- Main content --  */
 
-.hands__background{
-    background-image: url(Assets/lawyerhands.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 90vh;
- 
-   
+.hands__background {
+  background-image: url(Assets/lawyerhands.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 90vh;
+
+
 
 }
 
 
 .hands__content {
-    position: relative;
-    top: calc(30vh); 
-    color: #FFFFFF;
-    font-family: 'Poppins';
+  position: relative;
+  top: calc(30vh);
+  color: #FFFFFF;
+  font-family: 'Poppins';
 }
 
 .content__text {
-    position: absolute;
-    top: 50%; 
-    left: 50%; 
-    transform: translate(-50%, -70%);
-    width: 100%;
-    text-align: left; 
-    max-width: 1200px;
-    box-sizing: border-box;
-    display: flex; 
-    flex-direction: column; 
-    align-items: left; 
-    
-    
-}
-
-.content__text h1, .content__text h3, .content__text p {
-    margin: 0;
-    margin-bottom: 20px; 
-}
-
-.content__text h1{
-
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 700;
-font-size: 38px;
-text-transform: uppercase;
-margin-bottom: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+  width: 100%;
+  text-align: left;
+  max-width: 1200px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
 
 
 }
 
-.content__text h3{
-    font-weight: lighter;
-    font-size: 18px;
+.content__text h1,
+.content__text h3,
+.content__text p {
+  margin: 0;
+  margin-bottom: 20px;
 }
 
-.content__text p{
-    font-size: 14px;
-    font-weight: lighter;
+.content__text h1 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+
+
 }
 
-.hands__button{
+.content__text h3 {
+  font-weight: lighter;
+  font-size: 18px;
+}
 
-    background-color: #AE0000;
-    color: white;
-    border-radius: 10px;
-    padding: 10px 20px; 
-    cursor: pointer;
-    font-family: 'Poppins';
-    font-weight: 500;
-    font-size: 14px;
-    border: none;
-    float: left;
-    position: absolute;
-    top: 25vh; 
-    
-    
+.content__text p {
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+.hands__button {
+  background-color: #AE0000;
+  color: white;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 14px;
+  border: none;
+  float: left;
+  position: absolute;
+  top: 25vh;
+
+
 }
 
 /* Our Services */
 
 .ourservices__svg {
-
-    position: absolute;
-    top: 80vh;
-    width: 100%;
-
-
-   
-    
-   
+  position: absolute;
+  top: 80vh;
+  width: 100%;
 }
 
-.ourservices__text{
-    
-    font-family: 'Poppins';
-    color: #0A0000; 
-    position: relative;
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    left: 10;
-    max-width: 1200px;
+.ourservices__text {
+  font-family: 'Poppins';
+  color: #0A0000;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  left: 10;
+  max-width: 1200px;
 }
 
-.ourservices__h3, .ourservices__p{
-    margin: 0;
+.ourservices__h3,
+.ourservices__p {
+  margin: 0;
 
 }
 
-.ourservices__h3{
-    text-transform: uppercase;
-    font-size: 24px;
+.ourservices__h3 {
+  text-transform: uppercase;
+  font-size: 24px;
 }
 
-.squares__container{
+.squares__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  height: 100vh;
+  background-color: #F1F1F1;
+  margin-top: 50px;
+  padding: 6rem 15rem;
+  position: relative;
 
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
-    height: 100vh;
-    background-color: #F1F1F1;
-    margin-top: 50px;
-    padding: 6rem 15rem;
-    position: relative;
-    
-    
-    
-    }
+
+}
 
 .square {
-    
-   
-    font-family: 'Poppins';
-    width: 300px;
-    height: 300px;
-    background-color: #FFFFFF;
-    border-radius: 15px;
-    text-align: justify;
-    padding: 20px;
-    box-sizing: content-box;
-    position: relative;
-  
-    
+  font-family: 'Poppins';
+  width: 300px;
+  height: 300px;
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  text-align: justify;
+  padding: 20px;
+  box-sizing: content-box;
+  position: relative;
 
-    }
+
+}
 
 .square h3 {
-    margin-top: 110px;
+  margin-top: 110px;
 }
 
 .square_span {
-    font-size: 12px;
-   
-    
+  font-size: 12px;
+
+
 }
 
-.square .icon_square{
-    
-    width: 40px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
-    margin: 0 auto;
-    position: absolute;
-    top: 10px;
-     
+.square .icon_square {
+  width: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin: 0 auto;
+  position: absolute;
+  top: 10px;
+
 
 }
 
 .square .squareclip_path {
-    width: 100%;
-    height: 100%;
-    clip-path: polygon(12% 0, 100% 0, 100% 37%, 78% 18%);
-    background: #AE0000;
-    border-radius: 5px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
-    margin: 0 auto;
-    position: absolute;
-    top: 10px;
-    right: 10px;
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(12% 0, 100% 0, 100% 37%, 78% 18%);
+  background: #AE0000;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin: 0 auto;
+  position: absolute;
+  top: 10px;
+  right: 10px;
 
 }
 
+/* About us Section */
+
+.about-us-contain {
+  width: 1200px;
 
 
+}
+
+.about-us-text {
+  font-family: "Poppins";
+  margin-top: 5rem;
+
+}
+
+.about-us-text h4 {
+  color: #AE0000;
+  text-transform: uppercase;
+}
+
+.about-us-text h1 {
+  color: #000000;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.about-us-text p {
+  color: #2C0000;
+}
 
 
+.about-us-image {
+  position: absolute;
+  transform: translate(180%, -70%);
+  z-index: 1;
 
- 
+}
 
+.about-us-red-circle {
+  width: 400px;
+  height: 390px;
+  border-radius: 50%;
+  background: red;
+  transform: translate(80%, -70%);
 
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.about-us-rectangle-contain {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 300px;
+  top: -150px;
+  position: relative;
 
 
+}
+
+.about-us-rectangle {
+  font-family: 'Poppins';
+  width: 350px;
+  height: 150px;
+  background-color: #f1f1f1;
+  border-radius: 15px;
+  padding: 30px;
+  box-sizing: content-box;
+  border: solid 1px black;
 
 
+}
+
+.about-us-rectangle h3 {
+  font-size: 24px;
+  text-align: center;
 
 
+}
+
+.rectangle_span {
+  font-size: 14px;
+  margin-top: 30px;
 
 
+}
+
+.rectangle_icon {
+  display: flex;
+  position: absolute;
+  width: 60px;
+  top: 10px;
+}
+
+.about-us-rectangle:hover {
+  color: white;
+  background-color: #1c1919;
 
 
-
-
-
+}
