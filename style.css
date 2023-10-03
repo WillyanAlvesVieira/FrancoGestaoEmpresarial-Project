@@ -14,8 +14,7 @@ html {
 }
 
 
-li,
-a {
+.header__a {
   font-family: 'Poppins';
   font-weight: 500;
   font-size: 14px;
@@ -23,8 +22,15 @@ a {
   text-decoration: none;
   background-color: white;
   padding: 10px;
+}
+
+.nav__links li:last-child a.header__a {
+  background-color: #AE0000;
+  border-radius: 10px;
+  color: white;
 
 }
+
 
 header {
   display: flex;
@@ -148,7 +154,7 @@ a.header__adc {
   float: left;
   position: absolute;
   top: 25vh;
-
+  text-decoration: none;
 
 }
 
@@ -282,6 +288,7 @@ a.header__adc {
   transform: translate(180%, -70%);
   z-index: 1;
 
+
 }
 
 .about-us-red-circle {
@@ -299,7 +306,7 @@ a.header__adc {
   margin: 0 300px;
   top: -150px;
   position: relative;
-
+  flex-wrap: wrap;
 
 }
 
@@ -312,6 +319,8 @@ a.header__adc {
   padding: 30px;
   box-sizing: content-box;
   border: solid 1px black;
+
+
 
 
 }
@@ -331,7 +340,6 @@ a.header__adc {
 }
 
 .rectangle_icon {
-  display: flex;
   position: absolute;
   width: 60px;
   top: 10px;
@@ -339,7 +347,80 @@ a.header__adc {
 
 .about-us-rectangle:hover {
   color: white;
-  background-color: #1c1919;
+  background-color: #373636;
+  transition: 0.5s ease;
+
+}
+
+/* Specialization-Section */
+
+.specialization__contain {
+  background-color: #F1F1F1;
+
+}
+
+.specialization_text_contain {
+  display: flex;
+  position: relative;
+  top: 100px;
+  right: 25rem;
+  font-family: "Poppins";
+  z-index: 1;
+  margin: 0 auto;
+
+}
+
+.specialization_text h2,
+.specialization_text p,
+.specialization_text a {
+  padding-bottom: 1.5rem;
+
+}
+
+.specialization_text h2 {
+  font-weight: bold;
+}
+
+.specialization_text a {
+  background-color: #AE0000;
+  color: white;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.specialization_text a:hover {
+  background-color: #ff3c3c;
+}
+
+
+.specialization_rotation {
+
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 10rem;
 
 
 }
+
+.image_rotation1 {
+  position: relative;
+  left: 50rem
+}
+
+.image_rotation2 {
+  position: relative;
+  left: 25rem;
+  bottom: 3rem;
+}
+
+.image_rotation3 {
+  position: relative;
+
+}
+
