@@ -86,7 +86,6 @@ a.header__adc {
   height: 90vh;
 
 
-
 }
 
 
@@ -220,7 +219,9 @@ a.header__adc {
 }
 
 .square_span {
+  padding-top: 10px;
   font-size: 12px;
+
 
 
 }
@@ -357,6 +358,7 @@ a.header__adc {
 .specialization__contain {
   background-color: #F1F1F1;
 
+
 }
 
 .specialization_text_contain {
@@ -366,7 +368,7 @@ a.header__adc {
   right: 25rem;
   font-family: "Poppins";
   z-index: 1;
-  margin: 0 auto;
+
 
 }
 
@@ -394,7 +396,7 @@ a.header__adc {
 }
 
 .specialization_text a:hover {
-  background-color: #ff3c3c;
+  background-color: #957f7f;
 }
 
 
@@ -424,3 +426,133 @@ a.header__adc {
 
 }
 
+/* Ourteam-content */
+
+.ourteam-section {
+  position: relative;
+  width: 100%;
+  height: 45vh;
+}
+
+.ourteam-section img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  filter: blur(2px);
+}
+
+.ourteam-section h1 {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  color: #ffffff;
+  font-family: 'Poppins';
+  font-size: 2rem;
+}
+
+.colchetes1 {
+  color: red;
+}
+
+.colchetes2 {
+  color: red;
+}
+
+/* Ourteam-content-images */
+
+
+.cards-main {
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.cards-container {
+  margin-top: 40px;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+.card {
+  position: relative;
+  width: 250px;
+  height: 300px;
+  margin: 20px;
+  box-shadow: 0 15px 35px rgba(10, 8, 8, 0.2);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+
+}
+
+.card-content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.5s;
+}
+
+.cards-container .card:hover .card-content .imgBx img {
+  opacity: 0.5;
+}
+
+.cards-container .card .card-content .imgBx {
+  position: relative;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  overflow: hidden;
+
+}
+
+.cards-container .card .card-content .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cards-container .card .card-content .contentBx h3 {
+  color: rgb(0, 0, 0);
+  font-family: "Poppins";
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 18px;
+  text-align: center;
+  margin: 20px 0 10px;
+  line-height: 1.1em;
+
+}
+
+.cards-container .card .card-content .contentBx h3 p {
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: initial;
+
+}
+
+.cards-container .card .sci {
+  position: relative;
+
+}
+
+.sci li {
+  list-style: none;
+  margin: 0 10px;
+  transform: translateY(10px);
+  transform: translateX(-15px);
+  transition: 0.5s;
+}
