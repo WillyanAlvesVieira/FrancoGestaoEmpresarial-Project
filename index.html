@@ -3,32 +3,18 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
+  <meta name="viewport"content="width=device-width, initial-scale=1, user-scalable=yes" />
+  <meta name="author" content="Willyan Alves Vieira">
   <link rel="icon" href="Assets/Logo-F-Vermelho-Preto.png" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
+  <script src="navbar-contact.js"></script>
   <script src="https://kit.fontawesome.com/6b1661e82b.js" crossorigin="anonymous"></script>
+
   <title>Franco Gestão Empresarial</title>
 </head>
 
 <body>
-
-  <header>
-
-    <img class="logo" src="Assets/Logo Header.png" alt="logo">
-    <nav>
-      <ul class="nav__links">
-
-        <li><a href="#" class="header__a">Empresas</a></li>
-        <li><a href="#" class="header__a">Serviços</a></li>
-        <li><a href="#" class="header__a">Ações Sociais</a></li>
-        <li><a href="#" class="header__a">Equipe Tecnica</a></li>
-        <li><a href="#" class="header__a">Contato</a></li>
-        <li><a href="#" class="header__a">Área do Cliente</a></li>
-
-      </ul>
-    </nav>
-  </header>
+  <div class="navbar-container"></div>
 
   <main>
 
@@ -40,25 +26,21 @@
           <p>Acreditamos que uma contabilidade eficiente e estratégica é a base para o <br> sucesso
             empresarial. Por isso, oferecemos soluções abrangentes e <br> sob medida, adaptadas às
             necessidades específicas de cada cliente.</p>
-          <a href="#" class="hands__button">Saiba Mais</a>
+          <a href="https://api.whatsapp.com/send?phone=+554799565550&text=Olá tudo bem ? Gostaria de agendar uma Consultoria."
+            target="_blank" class="hands__button">Saiba Mais</a>
         </div>
+      </div>
     </section>
 
-    <section class="ourservices">
+
+    <section class="square_container_box">
       <div class="ourservices__text">
         <h3 class="ourservices__h3"> Nossos Serviços</h3>
         <p class="ourservices__p">Desenvolvemos nossos serviços de acordo com a necessidade o tamanho de sua
           empresa.</p>
       </div>
 
-      <svg class="ourservices__svg" width="1920" height="346" viewBox="0 0 1920 346" fill="none"
-        xmlns="http://www.w3.org/2000/svg">
-        <path
-          d="M0 43.7416C0 43.7416 520.467 142.16 948.794 43.7416C1377.12 -54.677 1920 43.7416 1920 43.7416V346L0 346V192.762V43.7416Z"
-          fill="white" />
-      </svg>
-
-      <section class="squares__container">
+      <div class="squares__container">
 
         <div class="square">
           <h3>Contabilidade</h3>
@@ -165,8 +147,7 @@
           <div class="squareclip_path"></div>
         </div>
 
-
-      </section>
+      </div>
 
     </section>
 
@@ -195,68 +176,66 @@
         </div>
       </div>
 
-      <aside class="about-us-image">
+      <div class="about-us-image">
         <img src="Assets/Images/About us.png" alt="about-us-logo">
-      </aside>
-
-      <div class="about-us-red-circle"></div>
+      </div>
 
     </section>
 
     <section class="about-us-rectangle-contain">
-      <div class="about-us-rectangle">
-
-        <h3>Missão</h3>
-        <p class="rectangle_span"> Aqui na Franco Gestão prezamos que as pessoas sejam elas mesmas e se sintam
-          felizes exercendo seu trabalho aqui.</p>
-        <svg class="rectangle_icon" width="73" height="81" viewBox="0 0 73 81" fill="none"
-          xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M50.1875 40.5C50.1875 44.0121 50.0164 47.3977 49.717 50.625H23.283C22.9693 47.3977 22.8125 44.0121 22.8125 40.5C22.8125 36.9879 22.9836 33.6023 23.283 30.375H49.717C50.0307 33.6023 50.1875 36.9879 50.1875 40.5ZM54.2937 30.375H71.8451C72.6008 33.6182 73 37.0037 73 40.5C73 43.9963 72.6008 47.3818 71.8451 50.625H54.2937C54.5932 47.366 54.75 43.9805 54.75 40.5C54.75 37.0195 54.5932 33.634 54.2937 30.375ZM70.348 25.3125H53.7092C52.2834 15.2033 49.4604 6.73945 45.8246 1.32891C56.9885 4.60371 66.0707 13.5896 70.3338 25.3125H70.348ZM49.0896 25.3125H23.9104C24.7801 19.5539 26.1203 14.4598 27.76 10.3307C29.257 6.59707 30.9252 3.8918 32.5363 2.1832C34.1332 0.50625 35.4592 0 36.5 0C37.5408 0 38.8668 0.50625 40.4637 2.1832C42.0748 3.8918 43.743 6.59707 45.24 10.3307C46.8939 14.4439 48.2199 19.5381 49.0896 25.3125ZM19.2908 25.3125H2.65195C6.9293 13.5896 15.9973 4.60371 27.1754 1.32891C23.5396 6.73945 20.7166 15.2033 19.2908 25.3125ZM1.15488 30.375H18.7062C18.4068 33.634 18.25 37.0195 18.25 40.5C18.25 43.9805 18.4068 47.366 18.7062 50.625H1.15488C0.399219 47.3818 0 43.9963 0 40.5C0 37.0037 0.399219 33.6182 1.15488 30.375ZM27.76 70.6535C26.1061 66.5402 24.7801 61.4461 23.9104 55.6875H49.0896C48.2199 61.4461 46.8797 66.5402 45.24 70.6535C43.743 74.3871 42.0748 77.0924 40.4637 78.801C38.8668 80.4938 37.5408 81 36.5 81C35.4592 81 34.1332 80.4938 32.5363 78.8168C30.9252 77.1082 29.257 74.4029 27.76 70.6693V70.6535ZM19.2908 55.6875C20.7166 65.7967 23.5396 74.2606 27.1754 79.6711C15.9973 76.3963 6.9293 67.4104 2.65195 55.6875H19.2908ZM70.348 55.6875C66.0707 67.4104 57.0027 76.3963 45.8389 79.6711C49.4746 74.2606 52.2834 65.7967 53.7234 55.6875H70.348Z"
-            fill="#AC3131" />
-        </svg>
-
-      </div>
-
 
       <div class="about-us-rectangle">
-        <h3>Visão</h3>
-        <p class="rectangle_span"> Organizar, solucionar, empreender e gerenciar os recursos dos clientes através da
-          gestão contábil aplicada para cada tipo de segmento ou atividade empresarial.</p>
-        <svg class="rectangle_icon" width="74" height="81" viewBox="0 0 74 81" fill="none"
-          xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M53.1279 37.5732C49.5046 38.3326 45.6501 37.0037 42.8492 33.5549L37.954 27.5273C36.0267 25.1543 34.9475 21.9586 34.9475 18.6047V16.6904L24.7074 9.80859C24.0264 9.3498 23.6024 8.44805 23.6409 7.48301C23.6795 6.51797 24.142 5.66367 24.8615 5.26816L30.9259 1.9459C33.29 0.664453 35.8469 0 38.4422 0H40.7678C45.4831 0 50.0186 2.21484 53.4491 6.18574L59.1794 12.8303C62.2887 16.4373 63.4451 21.6422 62.5971 26.4357L64.6271 28.9512L65.655 27.6855C66.8627 26.1984 68.8157 26.1984 70.0106 27.6855L73.0942 31.4824C74.3019 32.9695 74.3019 35.3742 73.0942 36.8455L61.7877 50.7674C60.5799 52.2545 58.627 52.2545 57.4321 50.7674L54.3485 46.9705C53.1407 45.4834 53.1407 43.0787 54.3485 41.6074L55.3763 40.3418L53.1279 37.5732ZM3.52044 59.6584L33.5213 28.8879C33.971 29.6631 34.4849 30.4066 35.0374 31.1027L39.9326 37.1303C40.7035 38.0795 41.5258 38.9021 42.3995 39.6141L17.3324 76.6652C15.4694 79.418 12.707 81 9.80328 81C4.38128 81 0 75.5895 0 68.9291C0 65.3537 1.29768 61.9523 3.52044 59.6584Z"
-            fill="#AC3131" />
-        </svg>
-
-
-      </div>
-
-      <div class="about-us-rectangle">
-        <h3>Valores</h3>
-        <p class="rectangle_span">Um dos valores mais importantes é o respeito com nossos clientes e isso significa
-          entregar qualidade, transparência, modernidade, segurança e confiança.</p>
-        <svg class="rectangle_icon" width="81" height="90" viewBox="0 0 81 90" fill="none"
-          xmlns="http://www.w3.org/2000/svg">
-          <g clip-path="url(#clip0_117_59)">
+        <div class="rectangle_icon">
+          <svg width="50" height="90" viewBox="0 0 73 81" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
-              d="M39.396 0.966138C41.6323 -0.316186 44.2139 -0.316186 46.4502 0.966138L79.2599 19.7364C80.5357 20.4612 81.3462 22.0409 81.3462 23.7878C81.3462 25.5347 80.5357 27.1144 79.2599 27.8392L46.4502 46.6094C44.2139 47.8918 41.6323 47.8918 39.396 46.6094L6.58625 27.8392C5.31049 27.0958 4.5 25.5161 4.5 23.7878C4.5 22.0594 5.31049 20.4612 6.58625 19.7364L39.396 0.966138ZM71.2751 38.9527L79.2599 43.5244C80.5357 44.2492 81.3462 45.8289 81.3462 47.5758C81.3462 49.3228 80.5357 50.9024 79.2599 51.6272L46.4502 70.3975C44.2139 71.6798 41.6323 71.6798 39.396 70.3975L6.58625 51.6272C5.31049 50.8838 4.5 49.3042 4.5 47.5758C4.5 45.8475 5.31049 44.2492 6.58625 43.5244L14.571 38.9527L37.3848 51.9989C40.8969 54.006 44.9493 54.006 48.4614 51.9989L71.2751 38.9527ZM48.4614 75.7869L71.2751 62.7407L79.2599 67.3125C80.5357 68.0373 81.3462 69.6169 81.3462 71.3639C81.3462 73.1108 80.5357 74.6905 79.2599 75.4153L46.4502 94.1855C44.2139 95.4678 41.6323 95.4678 39.396 94.1855L6.58625 75.4153C5.31049 74.6719 4.5 73.0922 4.5 71.3639C4.5 69.6355 5.31049 68.0373 6.58625 67.3125L14.571 62.7407L37.3848 75.7869C40.8969 77.7941 44.9493 77.7941 48.4614 75.7869Z"
+              d="M50.1875 40.5C50.1875 44.0121 50.0164 47.3977 49.717 50.625H23.283C22.9693 47.3977 22.8125 44.0121 22.8125 40.5C22.8125 36.9879 22.9836 33.6023 23.283 30.375H49.717C50.0307 33.6023 50.1875 36.9879 50.1875 40.5ZM54.2937 30.375H71.8451C72.6008 33.6182 73 37.0037 73 40.5C73 43.9963 72.6008 47.3818 71.8451 50.625H54.2937C54.5932 47.366 54.75 43.9805 54.75 40.5C54.75 37.0195 54.5932 33.634 54.2937 30.375ZM70.348 25.3125H53.7092C52.2834 15.2033 49.4604 6.73945 45.8246 1.32891C56.9885 4.60371 66.0707 13.5896 70.3338 25.3125H70.348ZM49.0896 25.3125H23.9104C24.7801 19.5539 26.1203 14.4598 27.76 10.3307C29.257 6.59707 30.9252 3.8918 32.5363 2.1832C34.1332 0.50625 35.4592 0 36.5 0C37.5408 0 38.8668 0.50625 40.4637 2.1832C42.0748 3.8918 43.743 6.59707 45.24 10.3307C46.8939 14.4439 48.2199 19.5381 49.0896 25.3125ZM19.2908 25.3125H2.65195C6.9293 13.5896 15.9973 4.60371 27.1754 1.32891C23.5396 6.73945 20.7166 15.2033 19.2908 25.3125ZM1.15488 30.375H18.7062C18.4068 33.634 18.25 37.0195 18.25 40.5C18.25 43.9805 18.4068 47.366 18.7062 50.625H1.15488C0.399219 47.3818 0 43.9963 0 40.5C0 37.0037 0.399219 33.6182 1.15488 30.375ZM27.76 70.6535C26.1061 66.5402 24.7801 61.4461 23.9104 55.6875H49.0896C48.2199 61.4461 46.8797 66.5402 45.24 70.6535C43.743 74.3871 42.0748 77.0924 40.4637 78.801C38.8668 80.4938 37.5408 81 36.5 81C35.4592 81 34.1332 80.4938 32.5363 78.8168C30.9252 77.1082 29.257 74.4029 27.76 70.6693V70.6535ZM19.2908 55.6875C20.7166 65.7967 23.5396 74.2606 27.1754 79.6711C15.9973 76.3963 6.9293 67.4104 2.65195 55.6875H19.2908ZM70.348 55.6875C66.0707 67.4104 57.0027 76.3963 45.8389 79.6711C49.4746 74.2606 52.2834 65.7967 53.7234 55.6875H70.348Z"
               fill="#AC3131" />
-          </g>
-          <defs>
-            <clipPath id="clip0_117_59">
-              <rect width="81" height="90" fill="white" />
-            </clipPath>
-          </defs>
-        </svg>
-
+          </svg>
+        </div>
+        <div class="about-text-rectangle">
+          <h3>Missão</h3>
+          <p> Aqui na Franco Gestão prezamos que as pessoas sejam elas mesmas e se sintam
+            felizes exercendo seu trabalho aqui.</p>
+        </div>
       </div>
 
-    </section>
 
-    <section class="specialization__wave">
+      <div class="about-us-rectangle">
+        <div class="rectangle_icon">
+          <svg width="50" height="90" viewBox="0 0 74 81" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M53.1279 37.5732C49.5046 38.3326 45.6501 37.0037 42.8492 33.5549L37.954 27.5273C36.0267 25.1543 34.9475 21.9586 34.9475 18.6047V16.6904L24.7074 9.80859C24.0264 9.3498 23.6024 8.44805 23.6409 7.48301C23.6795 6.51797 24.142 5.66367 24.8615 5.26816L30.9259 1.9459C33.29 0.664453 35.8469 0 38.4422 0H40.7678C45.4831 0 50.0186 2.21484 53.4491 6.18574L59.1794 12.8303C62.2887 16.4373 63.4451 21.6422 62.5971 26.4357L64.6271 28.9512L65.655 27.6855C66.8627 26.1984 68.8157 26.1984 70.0106 27.6855L73.0942 31.4824C74.3019 32.9695 74.3019 35.3742 73.0942 36.8455L61.7877 50.7674C60.5799 52.2545 58.627 52.2545 57.4321 50.7674L54.3485 46.9705C53.1407 45.4834 53.1407 43.0787 54.3485 41.6074L55.3763 40.3418L53.1279 37.5732ZM3.52044 59.6584L33.5213 28.8879C33.971 29.6631 34.4849 30.4066 35.0374 31.1027L39.9326 37.1303C40.7035 38.0795 41.5258 38.9021 42.3995 39.6141L17.3324 76.6652C15.4694 79.418 12.707 81 9.80328 81C4.38128 81 0 75.5895 0 68.9291C0 65.3537 1.29768 61.9523 3.52044 59.6584Z"
+              fill="#AC3131" />
+          </svg>
+        </div>
+        <div class="about-text-rectangle">
+          <h3>Visão</h3>
+          <p> Organizar, solucionar, empreender e gerenciar os recursos dos clientes através da
+            gestão contábil aplicada para cada tipo de segmento ou atividade empresarial.</p>
+        </div>
+      </div>
 
+      <div class="about-us-rectangle">
+        <div class="rectangle_icon">
+          <svg width="50" height="90" viewBox="0 0 81 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_117_59)">
+              <path
+                d="M39.396 0.966138C41.6323 -0.316186 44.2139 -0.316186 46.4502 0.966138L79.2599 19.7364C80.5357 20.4612 81.3462 22.0409 81.3462 23.7878C81.3462 25.5347 80.5357 27.1144 79.2599 27.8392L46.4502 46.6094C44.2139 47.8918 41.6323 47.8918 39.396 46.6094L6.58625 27.8392C5.31049 27.0958 4.5 25.5161 4.5 23.7878C4.5 22.0594 5.31049 20.4612 6.58625 19.7364L39.396 0.966138ZM71.2751 38.9527L79.2599 43.5244C80.5357 44.2492 81.3462 45.8289 81.3462 47.5758C81.3462 49.3228 80.5357 50.9024 79.2599 51.6272L46.4502 70.3975C44.2139 71.6798 41.6323 71.6798 39.396 70.3975L6.58625 51.6272C5.31049 50.8838 4.5 49.3042 4.5 47.5758C4.5 45.8475 5.31049 44.2492 6.58625 43.5244L14.571 38.9527L37.3848 51.9989C40.8969 54.006 44.9493 54.006 48.4614 51.9989L71.2751 38.9527ZM48.4614 75.7869L71.2751 62.7407L79.2599 67.3125C80.5357 68.0373 81.3462 69.6169 81.3462 71.3639C81.3462 73.1108 80.5357 74.6905 79.2599 75.4153L46.4502 94.1855C44.2139 95.4678 41.6323 95.4678 39.396 94.1855L6.58625 75.4153C5.31049 74.6719 4.5 73.0922 4.5 71.3639C4.5 69.6355 5.31049 68.0373 6.58625 67.3125L14.571 62.7407L37.3848 75.7869C40.8969 77.7941 44.9493 77.7941 48.4614 75.7869Z"
+                fill="#AC3131" />
+            </g>
+            <defs>
+              <clipPath id="clip0_117_59">
+                <rect width="81" height="90" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+        <div class="about-text-rectangle">
+          <h3>Valores</h3>
+          <p>Um dos valores mais importantes é o respeito com nossos clientes e isso significa
+            entregar qualidade, transparência, modernidade, segurança e confiança.</p>
+        </div>
+      </div>
 
     </section>
 
@@ -269,17 +248,20 @@
             experiente está
             pronta para impulsionar o seu<br> negócio. Descubra como podemos ajudar a <br> alcançar o sucesso juntos!
           </p>
-          <a href="#" class="specialization_button">Agende Sua Consultoria Gratuita</a>
+
         </div>
+        <a href="https://api.whatsapp.com/send?phone=+554799565550&text=Olá tudo bem ? Gostaria de agendar uma Consultoria."
+          target="_blank" class="specialization_button">Agende Sua Consultoria Gratuita</a>
+
       </div>
 
-      <aside class="specialization_rotation">
+      <div class="specialization_rotation">
 
         <img class="image_rotation1" src="Assets/Images/specialization 1.png" alt="specialization_logo1">
         <img class="image_rotation2" src="Assets/Images/specialization 2.png" alt="specialization_logo2">
         <img class="image_rotation3" src="Assets/Images/specialization 3.png" alt="specialization_logo3">
 
-      </aside>
+      </div>
 
     </section>
 
@@ -435,7 +417,7 @@
 
               <div class="profile-img">
                 <a href="https://www.instagram.com/km7vidroseacessorios/" target="_blank">
-                <img src="Assets/Images/Testimonial-1.png" alt="Imagem-KM7">
+                  <img src="Assets/Images/Testimonial-1.png" alt="Imagem-KM7">
                 </a>
               </div>
 
@@ -473,7 +455,7 @@
 
                 <div class="profile-img">
                   <a href="#" target="_blank">
-                  <img src="Assets/Images/Testimonial-2.png" alt="Imagem-KM7">
+                    <img src="Assets/Images/Testimonial-2.png" alt="Imagem-KM7">
                   </a>
                 </div>
 
@@ -512,7 +494,9 @@
               <div class="profile">
 
                 <div class="profile-img">
-                  <img src="Assets/Images/Testimonial-3.png" alt="Imagem-KM7">
+                  <a href="https://www.instagram.com/administrajoinville/" target="_blank">
+                    <img src="Assets/Images/Testimonial-3.png" alt="Imagem-KM7">
+                  </a>
                 </div>
 
                 <div class="name-user">
@@ -537,11 +521,12 @@
             </div>
 
           </div>
-
         </div>
-
       </div>
 
+    </section>
+
+    <section class="social-actions">
 
     </section>
 

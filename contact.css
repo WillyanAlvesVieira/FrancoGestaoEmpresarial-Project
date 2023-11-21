@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;700&family=Poppins:wght@300&family=Sintony:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;700&family=Poppins:wght@300;500&family=Sintony:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.contact-body {
+  font-family: "Poppins";
+  background-color: #F1F1F1;
+}
+
+.contactUs {
+  position: relative;
+  width: 100%;
+  padding: 50px 100px
+}
+
+.contact-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+
+}
+
+
+
+.contactUs .contact-title h1 {
+  color: #0A0000;
+}
+
+.form {
+  grid-area: form;
+}
+
+.info {
+  grid-area: info;
+}
+
+.map {
+  grid-area: map;
+}
+
+.contact {
+  padding: 40px;
+  background: #F1F1F1;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+.box {
+  position: relative;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 5fr, 2fr;
+  grid-template-areas: "form info" "form map";
+  gap: 20px;
+  margin-top: 20px;
+
+
+}
+
+.contact h3 {
+  color: #0A0000;
+  font-weight: 500;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+/*Form */
+
+.formBox {
+  position: relative;
+  width: 100%;
+}
+
+.formBox .row50 {
+  display: flex;
+  gap: 20px;
+}
+
+.inputBox {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  width: 100%
+}
+
+.formBox .row100 .inputBox {
+  width: 100%
+}
+
+.inputBox label {
+  color: #AE0000;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: 500;
+  font-size: 20px;
+
+}
+
+.inputBox input {
+  padding: 10px;
+  font-size: 14px;
+  outline: none;
+  border: 1px solid black;
+
+}
+
+
+
+.inputBox textarea {
+  padding: 10px;
+  font-size: 1.1em;
+  outline: none;
+  border: 1px solid black;
+  resize: none;
+  min-height: 220px;
+  margin-bottom: 10px;
+}
+
+.inputBox input[type="submit"] {
+  background: #AE0000;
+  color: white;
+  max-width: 120px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+  border: none;
+  padding: 10px 10px;
+  font-family: "Poppins";
+}
+
+.inputBox ::placeholder {
+  color: #999;
+  font-family: "Poppins";
+  font-weight: 300;
+}
+
+/*InfoBox */
+
+.info {
+  background: #F1F1F1;
+
+
+}
+
+.info h3 {
+  color: #0b0000;
+}
+
+
+.info .infoBox div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+
+}
+
+.info .infoBox div span {
+  min-width: 40px;
+  height: 40px;
+  color: #fff;
+  background: #AE0000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: 1.5em;
+  border-radius: 50%;
+  margin-right: 15px;
+
+}
+
+.info .infoBox div p {
+  color: #0A0000;
+  font-size: 1.1em;
+}
+
+.info .infoBox div a {
+  color: #0A0000;
+  text-decoration: none;
+  font-size: 1.1em;
+   word-break: break-all;
+  
+
+}
+
+.sci {
+  background: #F1F1F1;
+  display: flex;
+  align-items: left;
+  justify-content: start;
+  gap: 20px;
+}
+
+.sci li {
+  list-style: none;
+
+}
+
+.sci li a {
+  color: #0A0000;
+  font-size: 2em;
+}
+
+.sci li a:hover {
+  color: #870f27;
+}
+
+/* Contact map */
+.map {
+  padding: 0;
+  width: 100%;
+}
+
+.map iframe {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+}
+
+/* Contact map */
+
+
+.map {
+  padding: 0;
+  width: 100%;
+}
+
+.map iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+/* Responsive */
+
+@media(max-width: 991px) {
+
+
+  .box {
+  display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
+    grid-template-rows: auto;
+    justify-content: center;
+    grid-template-areas:
+      "form"
+      "info"
+      "map";
+      width: 100%;
+      padding: auto;
+      margin: auto;
+
+  }
+
+  .formBox .row50 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+  }
+
+  .inputBox {
+    width: 100%;
+  }
+
+
+}
+
+
+
+
