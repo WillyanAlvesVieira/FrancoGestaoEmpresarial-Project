@@ -17,8 +17,11 @@ document.addEventListener("DOMContentLoaded", function () {
     scriptElement.src = "main.js";
     document.body.appendChild(scriptElement);
 
+
     xhr.send();
 
 });
+
+
 
 

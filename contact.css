@@ -47,7 +47,7 @@
 }
 
 .contact {
-  padding: 40px;
+  padding: 20px;
   background: #F1F1F1;
   border-radius: 10px;
   border: 1px solid black;
@@ -123,8 +123,20 @@
   min-height: 220px;
   margin-bottom: 10px;
 }
+.inputBox button:disabled{
+  cursor: not-allowed;
+  background: #555b69;
+}
 
-.inputBox input[type="submit"] {
+.success{
+  color: greenyellow;
+}
+
+.error{
+  color: tomato;
+}
+
+.inputBox button[type="submit"] {
   background: #AE0000;
   color: white;
   max-width: 120px;
@@ -185,9 +197,8 @@
 .info .infoBox div a {
   color: #0A0000;
   text-decoration: none;
-  font-size: 1.1em;
-   word-break: break-all;
-  
+  font-size: 0.9em;
+  word-break: break-all;
 
 }
 
@@ -239,23 +250,27 @@
   border-radius: 10px;
 }
 
+/*Validation Form */
+
+
+
 /* Responsive */
 
 @media(max-width: 991px) {
 
 
   .box {
-  display: grid;
-   grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
     grid-template-rows: auto;
     justify-content: center;
     grid-template-areas:
       "form"
       "info"
       "map";
-      width: 100%;
-      padding: auto;
-      margin: auto;
+    width: 100%;
+    padding: auto;
+    margin: auto;
 
   }
 
@@ -273,7 +288,3 @@
 
 
 }
-
-
-
-
