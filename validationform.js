@@ -64,8 +64,6 @@ class FormSubmit {
   });
   formSubmit.init();
 
-  
-
   document.addEventListener("DOMContentLoaded", function () {
     const telefoneInput = document.getElementById("telefone");
   

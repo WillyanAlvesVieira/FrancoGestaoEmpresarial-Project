@@ -10,7 +10,8 @@
 
 }
 
-body, html{
+body,
+html {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
@@ -36,13 +37,13 @@ body, html{
 
 
 header {
-  
+
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   padding: 5px;
   background-color: white;
- 
+
 
 
 
@@ -107,7 +108,9 @@ a.header__adc {
 
 }
 
-.hamburger .bar,.hamburger::after,.hamburger::before {
+.hamburger .bar,
+.hamburger::after,
+.hamburger::before {
   content: '';
   display: flex;
   width: 100%;
@@ -147,7 +150,7 @@ a.header__adc {
 
 .mobile-nav.is-active {
   left: 0;
- 
+
 }
 
 .mobile-nav a {
@@ -160,39 +163,39 @@ a.header__adc {
   padding: 10px;
   color: #0A0000;
   border-radius: 5px;
-  
+
 }
 
 @media screen and (max-width: 969px) {
   .nav__links {
-      display: none;
-      
+    display: none;
+
   }
 
   .mobile-nav {
-      display: block;
-        
+    display: block;
+
   }
 
   .hamburger {
-      display: block;
-      
+    display: block;
+
   }
 
-  .socialaction-image-container{
+  .socialaction-image-container {
     display: none;
   }
 
-  .specialization-rotation{
+  .specialization-rotation {
     display: none;
   }
 
 }
 
 @media screen and (min-width: 970px) {
-.hamburger {
-  display: none;
-}
+  .hamburger {
+    display: none;
+  }
 }
 
 @media only screen and (max-device-width: 480px) {
@@ -486,13 +489,13 @@ a.header__adc {
 
 }
 
-.specialization-rotation{
+.specialization-rotation {
   position: relative;
- 
+
 }
 
 .image-rotation:nth-child(1) {
-  width: 230px; 
+  width: 230px;
   height: 330px;
   left: 45px;
   position: relative;
@@ -500,14 +503,14 @@ a.header__adc {
 }
 
 .image-rotation:nth-child(2) {
-  width: 230px; 
+  width: 230px;
   height: 330px;
 
 
 }
 
 .image-rotation:nth-child(3) {
-  width: 230px; 
+  width: 230px;
   height: 330px;
   right: 45px;
   position: relative;
@@ -650,7 +653,7 @@ a.header__adc {
 
 .ourpartner-wave {
   background-color: #f1f1f1;
-  
+
 
 }
 
@@ -693,9 +696,14 @@ a.header__adc {
   box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
   background-color: #ffffff;
   padding: 10px;
-  
+  transition: background-color 0.3s ease;
+}
+
+.testimonial-box:hover {
+  background-color: #f0f0f0; 
 
 }
+
 
 .profile-img {
   width: 50px;
@@ -747,11 +755,13 @@ a.header__adc {
   color: #0A0000;
 }
 
+
+
 /*Whatsapp Icon */
 
 .whatsapp-button {
   position: fixed;
-  right: 20px; 
+  right: 20px;
   bottom: 1rem;
   display: flex;
   align-items: center;
@@ -760,7 +770,7 @@ a.header__adc {
 }
 
 .whatsapp-button span svg {
-  height: 3.5em; 
+  height: 3.5em;
   fill: green;
 }
 
@@ -782,20 +792,26 @@ a.header__adc {
 
 
 .social-actions-text h2,
-.social-actions-text p{
-padding-bottom: 15px;
- }
-
-.social-actions-text h2{
- font-size: 30px;
+.social-actions-text p {
+  padding-bottom: 15px;
 }
-.social-actions-text p{
+
+.social-actions-text h2 {
+  font-size: 30px;
+}
+
+.social-actions-text p {
   font-size: 14px;
   color: #2C0000;
- }
+}
+
+.social-actions-text a {
+  color: skyblue;
+  text-decoration: underline;
+}
 
 
-.social-actions-button{
+.social-actions-button {
   background-color: #AE0000;
   color: white;
   border-radius: 10px;
@@ -808,13 +824,13 @@ padding-bottom: 15px;
 
 }
 
-.socialaction-image-container{
+.socialaction-image-container {
   position: relative;
 
 }
 
 .image-social-action:nth-child(1) {
-  width: 215px; 
+  width: 215px;
   height: 330px;
   left: 45px;
   position: relative;
@@ -823,18 +839,86 @@ padding-bottom: 15px;
 }
 
 .image-social-action:nth-child(2) {
-  width: 215px; 
+  width: 215px;
   height: 330px;
 
 
 }
 
 .image-social-action:nth-child(3) {
-  width: 215px; 
+  width: 215px;
   height: 330px;
   right: 45px;
   position: relative;
 }
 
-/*Scrollbehavior */
+/* Footer */
+
+footer {
+  background-color: #F1F1F1;
+  color: #0A0000;
+  padding: 20px 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.footer-image {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 20px; 
+}
+
+.footer-image img {
+  width: 80px; 
+  height: 80px; 
+}
+
+.footer-section h3 {
+  color: #0A0000;
+  font-size: 20px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.footer-section a {
+  color: skyblue;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.social-icons a i {
+  color: black;
+  padding: 10px; 
+}
+
+
+@media screen and (max-width: 600px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-image {
+    padding-left: 0;
+    margin-bottom: 20px; 
+  }
+
+  .footer-section {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}
 
